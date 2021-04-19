@@ -9,12 +9,12 @@
             <div class="card">
                 <h2 class="card__heading">SCHEDULE</h2>
                 <div class="card__details">
-                    <p>25 Nov 2016 Vestibulum viverra</p>
-                    <p>28 Nov 2016 Vestibulum viverra</p>
+                    <p>{{ date1 }}</p>
+                    <p>{{ date2 }}</p>
                     <br />
-                    <p>18 Dec 2016 Vestibulum viverra</p>
+                    <p>{{ date3 }}</p>
                     <br />
-                    <p>7 Jan 2017 Vestibulum viverra</p>
+                    <p>{{ date4 }}</p>
                 </div>
             </div>
         </div>
@@ -23,8 +23,8 @@
 
 <script>
 export default {
-    props: ['background'],
-}
+    props: ['background', 'date1', 'date2', 'date3', 'date4'],
+};
 </script>
 
 <style lang="scss" scoped>

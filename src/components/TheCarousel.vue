@@ -9,10 +9,10 @@
                     <img src="../assets/Carousel_2.png" alt="" />
                 </div>
                 <div class="img-container">
-                    <img src="../assets/Carousel_1.png" alt="" />
+                    <img src="../assets/Carousel_3.jpg" alt="" />
                 </div>
                 <div class="img-container">
-                    <img src="../assets/Carousel_2.png" alt="" />
+                    <img src="../assets/Carousel_1.png" alt="" />
                 </div>
             </div>
             <div class="carousel__dots">
@@ -107,32 +107,32 @@ export default {
             accordion_1: false,
             accordion_2: false,
             accordion_3: false,
-        }
+        };
     },
     mounted() {},
     methods: {
         closeAll() {
-            this.accordion_1 = false
-            this.accordion_2 = false
-            this.accordion_3 = false
+            this.accordion_1 = false;
+            this.accordion_2 = false;
+            this.accordion_3 = false;
         },
         showGroup1() {
-            this.accordion_1 = true
-            this.accordion_2 = false
-            this.accordion_3 = false
+            this.accordion_1 = true;
+            this.accordion_2 = false;
+            this.accordion_3 = false;
         },
         showGroup2() {
-            this.accordion_1 = false
-            this.accordion_2 = true
-            this.accordion_3 = false
+            this.accordion_1 = false;
+            this.accordion_2 = true;
+            this.accordion_3 = false;
         },
         showGroup3() {
-            this.accordion_1 = false
-            this.accordion_2 = false
-            this.accordion_3 = true
+            this.accordion_1 = false;
+            this.accordion_2 = false;
+            this.accordion_3 = true;
         },
     },
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -157,6 +157,7 @@ export default {
         display: none;
         .img-container {
             // width: 30rem;
+
             flex: 1 1;
             img {
                 object-fit: cover;
@@ -197,7 +198,8 @@ export default {
         display: flex;
         justify-content: space-between;
         .img-container {
-            // width: 20%;
+            max-width: 22rem;
+            max-height: 12.8rem;
             img {
                 width: 100%;
                 height: 100%;
